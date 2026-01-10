@@ -2,3 +2,6 @@ nohup: ignoring input
 127.0.0.1 - - [09/Jan/2026 16:46:45] "HEAD /manifest.json HTTP/1.1" 200 -
 127.0.0.1 - - [09/Jan/2026 16:46:45] "HEAD /sw.js HTTP/1.1" 200 -
 127.0.0.1 - - [09/Jan/2026 16:46:45] "HEAD / HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jan/2026 16:50:31] "HEAD /manifest.json HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jan/2026 16:50:31] "GET /script.js HTTP/1.1" 200 -
+127.0.0.1 - - [09/Jan/2026 16:50:31] "GET /script.js HTTP/1.1" 200 -
