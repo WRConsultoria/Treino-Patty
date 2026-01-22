@@ -1,202 +1,1352 @@
-<!doctype html>
-<html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br" class="Light">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Consultoria Online — Walmir Rezende</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WR Consultoria - Principal</title>
+  <link rel="manifest" href="/Treino-Patty/manifest.json" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="apple-touch-icon" href="/Treino-Patty/assets/imagem_icone1.png">
+  <link rel="icon" type="image/png" href="/Treino-Patty/assets/imagem_icone1.png">
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body class="main-page">
-  <header class="header">
-    <div class="container header-inner">
-      <img class="logo" src="assets/images/logo-wr-3D-1.png" alt="WR Consultoria" />
-      <div class="container header-inner">
-      </div>
-  </header>
+  <div id="container">
+    <div id="profile">
+      <img src="./assets/logo-wr-3D.png" alt="Logo WR Consultoria" />
+      <p>Consultoria Online</p>
+      <p></p>
+      <h2>Patrícia Picoral</h2>
+    </div>
 
-  <main id="container">
+    <!-- Botão para instalar o PWA (será exibido quando disponível) -->
+    <div id="installContainer" style="text-align:center; margin:12px 0;">
+      <button id="btnInstall" class="install-btn" style="display:none;">Instalar App</button>
+    </div>
 
-    <!-- ============================
-         PRIMEIRO BLOCO — O QUE VOCÊ RECEBE
-         ============================ -->
-    <section class="card" style="margin-top:18px">
-          <h3 class="section-title">O que voce recebe</h3>
-          <ul>
-            <li style="text-align: left;">• <b>Link Personalizado:</b> seu treino na palma da mão;</li>
-            <li style="text-align: left;">• <b>Vídeos:</b> com demonstração dos exercícios;</li>
-            <li style="text-align: left;">• <b>Ajustes Regulares:</b> evolução com base no seu progresso;</li>
-            <li style="text-align: left;">• <b>Ajustes Regulares:</b> evolução com base no seu progresso;</li>
-            <li style="text-align: left;">• <b>Suporte Individual:</b> para tirar dúvidas e otimizar resultados;</li>
-          </ul>
-        </section>  
+    <ul>
+      <!-- Links de navegação existentes -->
+      <!-- Botões e suas respectivas áreas de conteúdo -->
+
+  <button class="btn-toggle-content" data-target="segundaContent">Segunda-feira</button>
+
+  <div id="segundaContent" class="hidden-content">
+
+    <h4>Peito e Tríceps</h4>
+
+    <h4>Carga alta</h4>
+
+    <p>Descanso: 45–60 seg.</p>
+
+    <table>
+
+      <thead>
+
+        <tr>
+
+          <th style="text-align:left;">Exercício</th>
+
+          <th style="text-align:center;">Séries</th>
+
+          <th style="text-align:center;">Rep.</th>
+
+          <th style="text-align:center;"></th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+         <tr>
+
+          <td><b>Executar cada exercício</b></td>
+
+          <td><b>4</b></td>
+
+          <td><b>8</b></td>
+
+          <td><input type="checkbox" class="checkin"></td>
+
+        </tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Supino reto na
+
+                máquina</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/0eUtNqAXegc?si=1vkhoGoGcvb8vz9y" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Supino inclinado
+
+                máquina</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/acC6hFJuQPU?si=mtUoYkJ3mQh7-TNi" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Crucifixo
+
+                inclinado</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/sYFYGf6Uil0?si=6gvM0QrUoPOGXbW1" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Mergulho no
+
+                graviton</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/tLy0MID5d6Q?si=WKsPGcaz90MeCaUD" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Tríceps na polia com
+
+                barra</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/M88Bt4MMpkI?si=JmRiFS61LS2qtjws" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+        
+          <tr>
+
+          <td><b>Executar</b></td>
+
+          <td><b>4</b></td>
+
+          <td><b>40 seg.</b></td>
+
+          <td><input type="checkbox" class="checkin"></td>
+
+        </tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Abd Twist</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/vq1FICbQC4Q?si=t2U9mb8uYyPLCqH9" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
 
 
-    <!-- ============================
-         SEGUNDO BLOCO — PLANOS
-         AGORA COM ID CORRIGIDO
-         ============================ -->
-    <section id="plans-table" style="margin-top:24px">
-      <div class="grid grid-3" style="margin-top:12px">
+        </tr>
 
-        <!-- Plano Básico -->
-        <article class="card">
-          <h4 style="margin:0;font-weight:700"><b>Básico</b></h4>
-          <p style="color:#6B7280;margin-top:3px">Suporte básico</p>
-          <a href="assets/pdf/Plano_basico_informações.pdf" class="btn-link-more"
-            style="margin-top:6px;display:inline-block">Saiba mais</a>
+        <tr>
 
-          <div style="margin-top:12px">
-            <div style="font-size:22px;font-weight:800;color:var(--primary)">R$ 199,00 <span
-                style="font-weight:600">/mês</span></div>
-            <div style="color:#6B7280;margin-top:6px">5% off à vista no PIX</div>
-          </div>
+        <tr>
 
-          <div style="margin-top:12px;background:#E3F2FD;padding:10px;border-radius:8px">
-            <div style="font-size:13px"><b>Plano trimestral</b> — Total: R$ 597,00 (3x de R$ 199,00)</div>
-          </div>
+        <tr>
 
-          <div style="display:flex;gap:4px;margin-top:4px">
-            <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=cd614c82f1a9472d8e53d2191f6616b2"
-              class="btn" style="background:var(--primary);color:white;flex:1;text-align:center">PIX</a>
-            <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=7a7dcee9a6e7499c84e32714e966dca0"
-              class="btn"
-              style="border:1px solid var(--primary);color:var(--primary);flex:1;text-align:center">Recorrente</a>
-          </div>
+          <td><b>Caminhada na esteira inclinada ~8%</b></td>
 
-          <div style="margin-top:12px;background:#E3F2FD;padding:10px;border-radius:8px">
-            <div style="font-size:13px"><b>Plano semestral</b> — Total: R$ 1.140,00 (6x de R$ 190,00)</div>
-          </div>
+          <td><b>1</b></td>
 
-          <div style="display:flex;gap:4px;margin-top:4px">
-            <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=8bc883c044eb48d3901c861d7c6ffa7f"
-              class="btn" style="background:var(--primary);color:white;flex:1;text-align:center">PIX</a>
-            <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=d549b9bffd3b4c219dad02803e2d661d"
-              class="btn"
-              style="border:1px solid var(--primary);color:var(--primary);flex:1;text-align:center">Recorrente</a>
-          </div>
-        </article>
+          <td><b>25 min</b></td>
 
-        <!-- Plano Completo -->
-        <article class="card">
-          <h4 style="margin:0;font-weight:700"><b>Completo</b></h4>
-          <p style="color:#6B7280;margin-top:3px">Suporte intermediário</p>
-          <a href="assets/pdf/Plano_completo_informações.pdf" class="btn-link-more"
-            style="margin-top:6px;display:inline-block">Saiba mais</a>
+          <td><input type="checkbox" class="checkin"></td>
 
-          <div style="margin-top:12px">
-            <div style="font-size:22px;font-weight:800;color:var(--primary)">R$ 249,00 <span
-                style="font-weight:600">/mês</span></div>
-            <div style="color:#6B7280;margin-top:6px">5% off à vista no PIX</div>
-          </div>
+        </tr>
 
-          <div style="margin-top:12px;background:#E3F2FD;padding:10px;border-radius:8px">
-            <div style="font-size:13px"><b>Plano trimestral</b> — Total: R$ 747,00 (3x de R$ 249,00)</div>
-          </div>
+      </tbody>
 
-          <div style="display:flex;gap:4px;margin-top:4px">
-            <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=00357d1cc45d42ac964e56143212e97d"
-              class="btn" style="background:var(--primary);color:white;flex:1;text-align:center">PIX</a>
-            <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=cadfb86ebc4a421eac1c657f4618871c"
-              class="btn"
-              style="border:1px solid var(--primary);color:var(--primary);flex:1;text-align:center">Recorrente</a>
-          </div>
+    </table>
 
-          <div style="margin-top:12px;background:#E3F2FD;padding:10px;border-radius:8px">
-            <div style="font-size:13px"><b>Plano semestral</b> — Total: R$ 1.440,00 (6x de R$ 399,00)</div>
-          </div>
+  </div>
 
-          <div style="display:flex;gap:4px;margin-top:4px">
-            <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=5535e6e3bdda4fe68a13636ce044f8e3"
-              class="btn" style="background:var(--primary);color:white;flex:1;text-align:center">PIX</a>
-            <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=7fc131a841c54ac8b4e77f15c8087b30"
-              class="btn"
-              style="border:1px solid var(--primary);color:var(--primary);flex:1;text-align:center">Recorrente</a>
-          </div>
-        </article>
 
-        <!-- Plano Premium -->
-        <article class="plan-highlight">
-          <h4 style="margin:0;font-weight:700;color:var(--primary)"><b>Premium</b></h4>
-          <p style="color:#6B7280;margin-top:3px">Suporte total</p>
-          <a href="assets/pdf/Plano_premium_informações.pdf" class="btn-link-more"
-            style="margin-top:6px;display:inline-block">Saiba mais</a>
 
-          <div style="margin-top:12px">
-            <div style="font-size:28px;font-weight:900;color:var(--primary)">R$ 399,00 <span
-                style="font-weight:600">/mês</span></div>
-            <div style="color:#6B7280;margin-top:6px">5% off à vista no PIX</div>
-          </div>
+  <button class="btn-toggle-content" data-target="tercaContent">Terça-feira</button>
 
-          <div style="margin-top:12px;background:#E3F2FD;padding:10px;border-radius:8px">
-            <div style="font-size:13px"><b>Plano trimestral</b> — Total: R$ 1.197,00 (3x de R$ 399,00)</div>
-          </div>
+  <div id="tercaContent" class="hidden-content">
 
-          <div style="display:flex;gap:4px;margin-top:4px">
-            <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=69368a1afa6b435086e3ba13da0f8022"
-              class="btn" style="background:var(--primary);color:white;flex:1;text-align:center">PIX</a>
-            <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=69368a1afa6b435086e3ba13da0f8022"
-              class="btn"
-              style="border:1px solid var(--primary);color:var(--primary);flex:1;text-align:center">Recorrente</a>
-          </div>
+    <h4>Costas + bíceps</h4>
 
-          <div style="margin-top:12px;background:#E3F2FD;padding:10px;border-radius:8px">
-            <div style="font-size:13px"><b>Plano semestral</b> — Total: R$ 2.154,00 (6x de R$ 359,00)</div>
-          </div>
+    <h4>Carga alta</h4>
 
-          <div style="display:flex;gap:4px;margin-top:4px">
-            <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=8ad8ddcdf7da473ca7171cf385c40202"
-              class="btn" style="background:var(--primary);color:white;flex:1;text-align:center">PIX</a>
-            <a href="https://www.mercadopago.com.br/subscriptions/checkout?preapproval_plan_id=63a46a08d06342129771e8a0f3e8811a"
-              class="btn"
-              style="border:1px solid var(--primary);color:var(--primary);flex:1;text-align:center">Recorrente</a>
-          </div>
-        </article>
+    <p>Descanso: 45–60 seg.</p>
 
-      </div>
-    </section>
+    <table>
 
-    <!-- DIFERENCIAIS -->
-    <section class="card" style="margin-top:18px">
-      <h3 class="section-title">Diferenciais</h3>
-      <ul>
-        <li style="text-align: left;">• Musculação, Yoga e Funcional</li>
-        <li style="text-align: left;">• Acesso ao meu Canal de membros no YouTube</li>
-        <li style="text-align: left;">• Ajustes reais (não é treino pronto)</li>
-        <li style="text-align: left;">• Acompanhamento humano e próximo</li>
-        <li style="text-align: left;">• Planilha organizada com vídeos e progressão</li>
-        <li style="text-align: left;">• Comunicação direta via WhatsApp</li>
-      </ul>
-    </section>
+      <thead>
 
-    <!-- DEPOIMENTOS -->
-    <section id="testimonials" style="margin-top:18px">
-      <h3 class="section-title">Depoimentos</h3>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:8px">
-        <blockquote class="card">“Melhorei minha mobilidade e força. O cuidado fez toda diferença.” — <b>Ana P.</b>
-        </blockquote>
-        <blockquote class="card">“Emagreci sem dores e com consciência corporal.” — <b>Carla M.</b></blockquote>
-        <blockquote class="card">“O acompanhamento semanal me manteve motivada.” — <b>Renata S.</b></blockquote>
-      </div>
-    </section>
+        <tr>
 
-    <!-- COMO CONTRATAR -->
-    <section id="contact" class="card" style="margin-top:18px">
-      <h3 class="section-title">Mais informações</h3>
-      <div style="text-align:center;margin-top:14px">
-        <a id="whatsapp-btn" href="#" class="btn" style="background:#16A34A;color:#fff">WhatsApp</a>
-      </div>
-    </section>
+          <th style="text-align:left;">Exercício</th>
 
-  </main>
+          <th style="text-align:center;">Séries</th>
 
-  <footer class="footer">
-    © <span id="year-js"></span> Walmir Corrêa • Consultoria Online • Todos os direitos reservados
-  </footer>
+          <th style="text-align:center;">Rep.</th>
 
-  <script src="assets/js/main.js"></script>
+          <th style="text-align:center;"></th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+
+        <tr>
+
+          <td><b>Executar cada exercício</b></td>
+
+          <td><b>4</b></td>
+
+          <td><b>8</b></td>
+
+          <td><input type="checkbox" class="checkin"></td>
+
+        </tr>
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Puxada alta</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/2lSK2FIZWoA?si=4Pf1rDiz6OTHtzvZ" allowfullscreen></iframe>
+          
+               </div>
+
+             </div>
+ 
+          </td>
+
+        <tr>
+       
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Remada serrote</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/L2FuijYFTvE?si=jbG9pT-PCbJM958c" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Rosca direta com barra
+
+                W</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/fjS0CqDR4v8?si=HKCyAk1i96oR9nam" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Rosca alternada com
+
+                halteres</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/ymOxKh5zgAQ?si=G22l7AoSHwg0V2_D" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+        
+        <tr>
+
+          <td><b>Executar cada exercício</b></td>
+
+          <td><b>4</b></td>
+
+          <td><b>40 seg.</b></td>
+
+          <td><input type="checkbox" class="checkin"></td>
+
+        </tr>
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">prancha rotação
+
+                quadris</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/F-EVGSp37f8?si=N6fgv4QhRN2i0_M4" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+        <tr>
+
+        <tr>
+
+          <td><b>Escada nível 10 - 11</b></td>
+
+          <td><b>1</b></td>
+
+          <td><b>25 min</b></td>
+
+          <td><input type="checkbox" class="checkin"></td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+
+
+  <button class="btn-toggle-content" data-target="quartaContent">Quarta-feira</button>
+
+  <div id="quartaContent" class="hidden-content">
+
+    <h4>Pernas</h4>
+
+    <h4>Carga alta</h4>
+
+    <p>Descanso: 45–60 seg.</p>
+
+    <table>
+
+      <thead>
+
+        <tr>
+
+          <th style="text-align:center;">Exercício</th>
+
+          <th style="text-align:center;">Séries</th>
+
+          <th style="text-align:center;">Rep.</th>
+
+          <th style="text-align:center;"></th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+         <tr>
+
+          <td><b>Executar cada exercício</b></td>
+
+          <td><b>4</b></td>
+
+          <td><b>8</b></td>
+
+          <td><input type="checkbox" class="checkin"></td>
+
+        </tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Agachamento smith pés a
+
+                frente</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/WrKnmuKfqoU?si=excwFe-UZDDCFURt" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Abdução Polia Baixa
+
+                (Cabo por Trás)</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/vUSz_MuUzDk?si=Wne0OKL3O_2X-6mT" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Cadeira
+
+                extensora</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/NoUpsxVMeRU?si=qHQdll7BWZO-F94p" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Cadeira adutora</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/1aATfJITaIw?si=jJjYA6DPSQbyZBIU" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Panturrilha
+
+                sentado</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/9fIw0ue8iQE?si=3gTr-ZACWiB1xxlj" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Elevação
+
+                pélvica</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/dnkII5OPzzA?si=8zkLrU9FQKMt2dgE" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td><b>Corrida leve esteira inclinada 2%</b></td>
+
+          <td><b>1</b></td>
+
+          <td><b>25 min</b></td>
+
+          <td><input type="checkbox" class="checkin"></td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+
+
+  <button class="btn-toggle-content" data-target="quintaContent">Quinta-feira</button>
+
+  <div id="quintaContent" class="hidden-content">
+
+    <h4>Ombros e Abdômen</h4>
+
+    <h4>Carga alta</h4>
+
+    <p>Descanso: 45–60 seg.</p>
+
+    <table>
+
+      <thead>
+
+        <tr>
+
+          <th style="text-align:left;">Exercício</th>
+
+          <th style="text-align:center;">Séries</th>
+
+          <th style="text-align:center;">Rep.</th>
+
+          <th style="text-align:center;"></th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+         <tr>
+
+          <td><b>Executar cada exercício</b></td>
+
+          <td><b>4</b></td>
+
+          <td><b>8</b></td>
+
+          <td><input type="checkbox" class="checkin"></td>
+
+        </tr>
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Desenvolvimento militar
+
+                no smith</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/hejuwn4kffM?si=OmwG93dfDt6wSQao" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Elevação
+
+                lateral</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/ot9nwSC1JnA?si=3WNZXAjd8JxqgXqM" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Elevação frontal
+
+                (halteres)</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/GqZRmCow0rw?si=2k-ih36s1mB69Jbs" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Face pull</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/n9iyonvnuFc?si=EfcUy5EFw2st7Zq2" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+         </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Crucifixo invertido na
+
+                máquina</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/kjlkbl_tnJ0?si=g5eZk7dx8GWzOMxr" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Abdominais oblíquos na
+
+                polia baixa</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/NKPY2r7Y9rw?si=XJQxYyTqgHVh4QGh" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+
+
+  <button class="btn-toggle-content" data-target="sextaContent">sexta-feira</button>
+
+  <div id="sextaContent" class="hidden-content">
+
+    <h4>FullBody</h4>
+
+    <h4>Carga alta</h4>
+
+    <p>Exercícios unilaterais,executar entre 8 e 10 cada lado</p>
+
+    <p>Descanso: 45–60 seg.</p>
+
+    <table>
+
+      <thead>
+
+        <thead>
+
+        <tr>
+
+          <th style="text-align:center;">Exercício</th>
+
+          <th style="text-align:center;">Séries</th>
+
+          <th style="text-align:center;">Rep.</th>
+
+          <th style="text-align:center;"></th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+         <tr>
+
+          <td><b>Executar cada exercício</b></td>
+
+          <td><b>4</b></td>
+
+          <td><b>8</b></td>
+
+          <td><input type="checkbox" class="checkin"></td>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">agachamento no smith</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/1oipoiTpbJA?si=ZEHGbfLvgKgAmeZX" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Supino reto com halteres</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/hlV6f0kHmeo?si=8NMo0JfUP4L4cQiK" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Remada serrote</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/L2FuijYFTvE?si=-YB0867o_T2_udzN" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Cadeira adutora</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/1aATfJITaIw?si=jJjYA6DPSQbyZBIU" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Elevação
+
+                pélvica</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/dnkII5OPzzA?si=8zkLrU9FQKMt2dgE" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Abdução na
+
+                polia</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/7MBj2pE4mCI?si=aYt0OmZYWHwxuzGJ" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Tríceps na
+
+                corda</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/M88Bt4MMpkI?si=QTOsyV_3gtW_Ad6u" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Rosca scott w</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/QkNciumGy14?si=qYuyWGHzuU-MUpP6" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Abdominal roda</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/LUOz2ooRdc4?si=0nD4Y73a2r1oTNl5" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td><b>Escada intensidade 9</b></td>
+
+          <td><b>1</b></td>
+
+          <td><b>30 min</b></td>
+
+          <td><input type="checkbox" class="checkin"></td>
+
+        </tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+
+
+  <button class="btn-toggle-content" data-target="fullbodyContent">Full-Body</button>
+
+  <div id="fullbodyContent" class="hidden-content">
+
+    <h4> FullBody</h4>
+
+    <h4>Carga alta</h4>
+
+    <p>Exercícios unilaterais, 8 cada lado</p>
+
+    <p>Descanso: 45–60 seg.</p>
+
+    <table>
+
+      <thead>
+
+        <thead>
+
+        <tr>
+
+          <th style="text-align:center;">Exercício</th>
+
+          <th style="text-align:center;">Séries</th>
+
+          <th style="text-align:center;">Rep.</th>
+
+          <th style="text-align:center;"></th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+         <tr>
+
+          <td><b>Executar cada exercício</b></td>
+
+          <td><b>4</b></td>
+
+          <td><b>8 - 10</b></td>
+
+          <td><input type="checkbox" class="checkin"></td>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Búlgaro     </button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/rKtVQcJkvbc?si=SZNLSrESAanr-Hls" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+        
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Terra sumo</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/27HgT6XW0to?si=Utr0aNQCYvZzu6WP" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+        
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Extensão de quadril na
+
+                polia (coice)</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/76BzXlotFho?si=no26qk0CEqIvMPgu" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Gêmeos em pé no smith
+
+                (pé sobre anilha)</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/_8fRGmhHJj4?si=3KQmeUX2lRmUkTr6" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td><b>Bi-set 1:</b></td>
+
+          <td><b>2</b></td>
+
+          <td><b>8</b></td>
+
+          <td><input type="checkbox" class="checkin"></td>
+
+        </tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Rosca alternada
+
+                sentada</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/N1niow42B5I?si=NarmeRAfH0OzyiE4" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Tríceps françes
+
+                unilateral sentada</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/J_LtAnEqcNw?si=L_4MB2WOQrlQngYT" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+        <tr>
+
+        <tr>
+
+          <td><b>Biset 2:</b></td>
+
+          <td><b>2</b></td>
+
+          <td><b>8</b></td>
+
+          <td><input type="checkbox" class="checkin"></td>
+
+        </tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Pull over</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/vKCQHaG0Rj0?si=C5mGL4jY_OYdxm20" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Remada curvada
+
+                w</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/r0deDs0ptOU?si=DoT6zIpe-sb1JA_y" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td><b>Finalização metabólica em circuito</b></td>
+
+          <td><b>4</b></td>
+
+          <td><b>35 seg. cada</b></td>
+
+          <td><input type="checkbox" class="checkin"></td>
+
+        </tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Escalador</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/fDo4sulRb04?si=dpjq-Ti3FQRQASNC" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Abd remador</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/MM1Ma9WI77Y?si=ML4px5SzLsAGmo2r" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Prancha lateral
+
+                D</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/okcvWgvBn3c?si=pSao7HSKfAkdDf2o" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Prancha lateral
+
+                E</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/okcvWgvBn3c?si=pSao7HSKfAkdDf2o" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+        <tr>
+
+          <td colspan="4">
+
+            <div class="exercise"><button class="exercise-name" onclick="toggleVideo(this)">Abd twist</button>
+
+              <div class="exercise-video hidden">
+
+                <iframe src="https://youtube.com/embed/-cPtvFdT8dc?si=Zs2Syz9LgOOuhnH7" allowfullscreen></iframe>
+
+              </div>
+
+            </div>
+
+          </td>
+
+        <tr>
+
+      </tbody>
+
+    </table>
+
+  </div>
+
+
+
+  </li>
+
+</ul>
+
+
+
+    <div id="social-links">
+      <a href="https://www.instagram.com/personal_walmir_rezende" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+      <a href="https://www.youtube.com/@walmirrezende" target="_blank">
+        <ion-icon name="logo-youtube"></ion-icon>
+      </a>
+      <a href="https://wa.me/5511933444385" target="_blank">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
+    </div>
+
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>
