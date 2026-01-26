@@ -5,7 +5,7 @@ const ASSETS = [
   './style.css',
   './script.js',
   './manifest.json',
-  './assets/imagem_icone1.png',
+  './assets/imagem%20icone1.png',
   './assets/logo-wr-3D.png'
 ];
 
